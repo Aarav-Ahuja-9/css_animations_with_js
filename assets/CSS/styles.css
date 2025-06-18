@@ -30,8 +30,23 @@ body {
     font-size: 4.5vh;
     display: flex;
     align-items: center;
+    margin: 15vh 0;
 }
 
 .PreviewBox P {
     width: 90%;
+}
+
+input , select {
+    width: 35vh;
+    height: 10vh;
+    margin: 2vh;
+    border-radius: 2vh;
+    padding: 1vh;
+    border: 2px solid var(--primary-color);
+    outline: 0;
+}
+ 
+form {
+    width: 50%;
 }
