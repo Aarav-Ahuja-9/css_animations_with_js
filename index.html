@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Css Animations Test With JS (Simple JS project)</title>
+  </head>
+  <body>
+    <div class="PreviewBox">
+      <p>animated box</p>
+    </div>
+
+    <form action="">
+      <select id="AnimationList" name="AnimationList" required>
+        <option value="" disabled selected>Please Selct An Animation</option>
+        <option value="animate__fadeIn">Fade In</option>
+        <option value="animate__fadeInUp">Fade In Up</option>
+        <option value="animate__fadeInDown">Fade In Down</option>
+        <option value="animate__fadeInLeft">Fade In Left</option>
+        <option value="animate__fadeInRight">Fade In Right</option>
+
+        <option value="animate__slideInUp">Slide In Up</option>
+        <option value="animate__slideInDown">Slide In Down</option>
+        <option value="animate__slideInLeft">Slide In Left</option>
+        <option value="animate__slideInRight">Slide In Right</option>
+
+        <option value="animate__zoomIn">Zoom In</option>
+        <option value="animate__zoomInUp">Zoom In Up</option>
+        <option value="animate__zoomInDown">Zoom In Down</option>
+
+        <option value="animate__flip">Flip</option>
+        <option value="animate__flipInX">Flip In X</option>
+        <option value="animate__flipInY">Flip In Y</option>
+
+        <option value="animate__bounce">Bounce</option>
+        <option value="animate__bounceIn">Bounce In</option>
+        <option value="animate__bounceInUp">Bounce In Up</option>
+
+        <option value="animate__rotateIn">Rotate In</option>
+        <option value="animate__rotateInDownLeft">Rotate In Down Left</option>
+
+        <option value="animate__lightSpeedInLeft">Light Speed In Left</option>
+        <option value="animate__rollIn">Roll In</option>
+        <option value="animate__rubberBand">Rubber Band</option>
+        <option value="animate__heartBeat">Heart Beat</option>
+        <option value="animate__tada">Tada</option>
+      </select>
+
+      <input
+        type="number"
+        name="DurationField"
+        id="DurationField"
+        required
+        placeholder="please enter a duration"
+      />
+
+      <input
+        type="number"
+        name="DelayField"
+        id="DelayField"
+        required
+        placeholder="please enter a delay"
+      />
+
+      <select id="RepeatCount" name="RepeatCount" required>
+        <option value="" disabled selected>
+          Please select animation count
+        </option>
+        <option value="1">1 time</option>
+        <option value="2">2 times</option>
+        <option value="3">3 times</option>
+        <option value="infinite">Infinite</option>
+      </select>
+
+      <button type="submit">Start</button>
+    </form>
+  </body>
+</html>
