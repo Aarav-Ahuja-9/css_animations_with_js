@@ -14,10 +14,14 @@
 
 body {
     background-color: var(--background-color);
-    color: var(--white-color);
+    color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+input::placeholder {
+    color: var(--background-color);
 }
 
 .PreviewBox {
@@ -25,28 +29,64 @@ body {
     width: 18%;
     background-color: var(--primary-color);
     border-radius: 3vh;
-    border: 1vh dotted var(--Yellow-color);
-    color: var(--white-color);
+    border: 3.5px solid var(--Yellow-color);
     font-size: 4.5vh;
     display: flex;
     align-items: center;
-    margin: 15vh 0;
+    justify-content: center;
+    margin: 10vh 0;
 }
 
 .PreviewBox P {
-    width: 90%;
+    width: 80%;
+    margin-left: 25px;
 }
+
+form select option {
+    color: var(--background-color);
+    font-size: 2.5vh;
+} 
 
 input , select {
     width: 35vh;
     height: 10vh;
+    color: black;
     margin: 2vh;
     border-radius: 2vh;
     padding: 1vh;
-    border: 2px solid var(--primary-color);
-    outline: 0;
+    border: 2.5px solid var(--white-color);
+    outline: 2.5px solid var(--Yellow-color);
+    background: var(--primary-color);
+    
 }
  
 form {
     width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Chrome, Safari, Edge */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+}
+
+button {
+    width: 35vh;
+    height: 10vh;
+    background-color: var(--primary-color);
+    border-radius: 2vh;
+    border: 2.5px solid var(--white-color);
+    outline: 2.5px solid var(--Yellow-color);
+    font-size: 3vh;
+    cursor: pointer;
+    margin-top: 5vh;
 }
