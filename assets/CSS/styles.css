@@ -24,7 +24,7 @@ input::placeholder {
     color: var(--background-color);
 }
 
-.PreviewBox {
+#PreviewBox {
     height: 15vh;
     width: 18%;
     background-color: var(--primary-color);

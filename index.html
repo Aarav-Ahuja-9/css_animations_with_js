@@ -11,13 +11,13 @@
     <title>Css Animations Test With JS (Simple JS project)</title>
   </head>
   <body>
-    <div class="PreviewBox animate__animated animate__bounce"      style="--animate-duration: infinite; --animate-delay: 1s;">
+    <div class="animate__animated" id="PreviewBox">
       <p>animated box</p>
     </div>
 
     <form action="">
       <div class="inputs">
-        <select id="AnimationList" name="AnimationList" required>
+        <select id="AnimationList" name="AnimationList"  >
           <option value="" disabled selected>Please Selct An Animation</option>
           <option value="animate__fadeIn">Fade In</option>
           <option value="animate__fadeInUp">Fade In Up</option>
@@ -56,7 +56,7 @@
           type="number"
           name="DurationField"
           id="DurationField"
-          required
+           
           placeholder="please enter a duration"
         />
   
@@ -64,11 +64,11 @@
           type="number"
           name="DelayField"
           id="DelayField"
-          required
+           
           placeholder="please enter a delay"
         />
   
-        <select id="RepeatCount" name="RepeatCount" required>
+        <select id="RepeatCount" name="RepeatCount"  >
           <option value="" disabled selected>
             Please select animation count
           </option>
@@ -81,5 +81,6 @@
 
       <button type="submit">Start</button>
     </form>
+    <script src="assets/JS/main.js"></script>
   </body>
 </html>
